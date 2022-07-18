@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import Tooltip from "./ToolTip"
-import copyIcon from "../images/copy.svg"
+// import copyIcon from "../images/copy.svg"
 
 const ReactJson = React.lazy(() => import("react-json-view"))
 
@@ -72,7 +72,8 @@ const DevTools = ({ response }: any) => {
                 delay={200}
                 status={forceUpdate}
               >
-                <img src={copyIcon} alt="copy icon" />
+                <span>copy</span>
+                {/*<img src={copyIcon} alt="copy icon" />*/}
               </Tooltip>
             </span>
             <button
